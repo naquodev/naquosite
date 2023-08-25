@@ -1,0 +1,79 @@
+.home {
+    margin-top: 14.427vw;
+    margin-left: 17.292vw;
+    display: flex;
+    .left {
+        h1 {
+            display: flex;
+            width: 35.156vw;
+            height: 7.969vw;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #fff;
+            font-family: Rubik;
+            font-size: 4.193vw;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+        p {
+            margin-top: 2.604vw;
+            width: 40.417vw;
+            color: rgba(255, 255, 255, 0.9);
+            font-family: Rubik;
+            font-size: 1.615vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .buttons {
+            margin-top: 2.604vw;
+            a:nth-child(1) {
+                display: inline-flex;
+                height: 4.427vw;
+                padding: 0.677vw 2.552vw;
+                justify-content: center;
+                align-items: center;
+                gap: 0.521vw;
+                flex-shrink: 0;
+                border-radius: 1.823vw;
+                background: #ff6736;
+                color: #fff;
+                font-family: Rubik;
+                font-size: 1.615vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            a:nth-child(2) {
+                margin-left: 2.604vw;
+                display: inline-flex;
+                height: 4.427vw;
+                padding: 1.25vw 4.063vw;
+                justify-content: center;
+                align-items: center;
+                gap: 0.521vw;
+                flex-shrink: 0;
+                border-radius: 1.823vw;
+                background-color: #fff;
+                color: #150f0d;
+                font-family: Rubik;
+                font-size: 1.615vw;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+    .right {
+        margin-left: 5.208vw;
+        img {
+            width: 19.844vw;
+            height: 26.406vw;
+            flex-shrink: 0;
+        }
+    }
+}
