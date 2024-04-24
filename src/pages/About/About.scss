@@ -1,0 +1,84 @@
+@import "../../_settings.scss";
+.about {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    .container {
+        @include container();
+        justify-content: space-around;
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 700px;
+            padding: 15px;
+            .section {
+                span {
+                    position: relative;
+                    font-size: 13px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        width: 50px;
+                        left: 110%;
+                        transform: translateY(-50%);
+                        height: 1px;
+                        background-color: $primaryColor;
+                    }
+                }
+            }
+            .title {
+                @include margin();
+                max-width: 400px;
+            }
+            .desc {
+                @include margin();
+                max-width: 600px;
+            }
+            .number {
+                @include margin();
+                display: flex;
+                flex-wrap: wrap;
+                div {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 20px;
+                    width: 280px;
+                    span {
+                        margin-right: 5px;
+                        font-size: 85px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .right {
+            width: 500px;
+            position: relative;
+            height: auto;
+            padding: 15px;
+            .title,
+            .info {
+                position: relative;
+            }
+            .title {
+                margin-top: 7%;
+                p {
+                    @include margin();
+                }
+            }
+            .info {
+                margin-top: 30%;
+                transition: 0.3s;
+                &:hover {
+                    transform: translateX(3px);
+                }
+                a {
+                    position: relative;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

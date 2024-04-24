@@ -1,0 +1,54 @@
+@import "../../_settings.scss";
+.nav {
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        width: 460px;
+        background: rgba($color: $backgroundColor, $alpha: 0.3);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        // box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        a {
+            font-size: 20px;
+            cursor: pointer;
+            color: $tertiaryColor;
+            i {
+                transition: 0.3s;
+                &:hover {
+                    color: $primaryColor;
+                }
+            }
+            &.active {
+                i {
+                    transition: 0.3s;
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .nav {
+        .container {
+            width: 340px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .nav {
+        .container {
+            width: 240px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.nav {
+  position: fixed;
+  z-index: 999;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  width: 460px;
+  background: rgba(28, 28, 28, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.nav .container a {
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(196, 196, 196);
+}
+.nav .container a i {
+  transition: 0.3s;
+}
+.nav .container a i:hover {
+  color: #ff6736;
+}
+.nav .container a.active i {
+  transition: 0.3s;
+  color: #ff6736;
+}
+
+@media screen and (max-width: 510px) {
+  .nav .container {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .nav .container {
+    width: 240px;
+  }
+}/*# sourceMappingURL=Nav.css.map */

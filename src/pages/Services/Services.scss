@@ -1,0 +1,121 @@
+@import "../../_settings.scss";
+.services {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    .container {
+        @include container();
+        display: block;
+        .default {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 100px;
+            .left {
+                width: 450px;
+                min-height: 650px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .right {
+                width: 450px;
+                min-height: 670px;
+                .section {
+                    span {
+                        position: relative;
+                        font-size: 13px;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            width: 50px;
+                            left: 110%;
+                            transform: translateY(-50%);
+                            height: 1px;
+                            background-color: $primaryColor;
+                        }
+                    }
+                    h1 {
+                        @include margin();
+                        font-weight: lighter;
+                    }
+                }
+                .cards {
+                    @include margin();
+                    &:hover > .card:not(:hover) {
+                        i {
+                            color: white;
+                        }
+
+                        background-color: transparent;
+                    }
+                    .card {
+                        @include margin();
+                        width: 95%;
+                        padding: 30px;
+                        min-height: 200px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        border-radius: 4px;
+                        transition: 0.5s;
+
+                        &:hover {
+                            background-color: $primaryColor;
+                            i {
+                                color: $backgroundColor;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            background-color: $primaryColor;
+                            i {
+                                color: $backgroundColor;
+                            }
+                        }
+                        .leftCard {
+                            i {
+                                font-size: 60px;
+                                transition: 0.3s;
+                            }
+                        }
+                        .rightCard {
+                            width: 70%;
+                            h2 {
+                            }
+                            p {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .web {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+@media screen and (max-width: 1141px) {
+    .services {
+        .container {
+            .default {
+                .right {
+                    @include margin();
+                    .cards {
+                        .card {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+$primaryColor: #ff6736;
+$secondaryColor: white;
+$tertiaryColor: rgb(196, 196, 196);
+$backgroundColor: #1c1c1c;
+$fourthColor: #ffa64d;
+
+@mixin hCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin vCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin container {
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 30px;
+}
+
+@mixin margin {
+    margin-top: 20px;
+}
+
+@mixin button {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    color: $secondaryColor;
+    text-transform: capitalize;
+    padding: 12px 0px;
+    width: 120px;
+    border-radius: 22px;
+    background-color: $primaryColor;
+    overflow: hidden;
+    transition: all 0.2s linear 0s;
+    letter-spacing: 0.5px;
+}

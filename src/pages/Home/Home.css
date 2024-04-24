@@ -1,0 +1,81 @@
+.home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 120px);
+}
+.home .container {
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.home .container .presentation {
+  width: 50%;
+}
+.home .container .presentation h1 {
+  font-size: 3.2em;
+  white-space: nowrap;
+}
+.home .container .presentation h2 {
+  margin-top: 20px;
+}
+.home .container .presentation p {
+  margin-top: 20px;
+  max-width: 85%;
+}
+.home .container .presentation a {
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  color: white;
+  text-transform: capitalize;
+  padding: 12px 0px;
+  width: 120px;
+  border-radius: 22px;
+  background-color: #ff6736;
+  overflow: hidden;
+  transition: all 0.2s linear 0s;
+  letter-spacing: 0.5px;
+}
+.home .container .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+.home .container .image img {
+  background-color: #ff6736;
+  border-radius: 50% 20%;
+  transition: 0.3s;
+  width: 300px;
+  height: 400px;
+}
+.home .container .image img:hover {
+  border-radius: 45% 5%;
+}
+
+@media screen and (max-width: 1028px) {
+  .home .container .image {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  .home .container .presentation {
+    text-align: center;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home .container .presentation h1 {
+    font-size: 2em;
+  }
+}/*# sourceMappingURL=Home.css.map */

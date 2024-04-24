@@ -1,0 +1,136 @@
+footer {
+  top: 60px;
+  padding: 120px 20px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #ff6736;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .start {
+  padding: 10px;
+  position: absolute;
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.37);
+  top: -50px;
+  width: 65%;
+  margin: 0 auto;
+  height: 150px;
+  background-color: #ffa64d;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .start .title {
+  max-width: 400px;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .start .title h1 {
+  color: #1c1c1c;
+  text-align: center;
+}
+footer .start .desc {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .start .desc p {
+  color: #1c1c1c;
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+}
+footer .start .button {
+  width: 300px;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .start .button a {
+  color: #1c1c1c;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #ff6736;
+  transition: 0.3s;
+}
+footer .start .button a:hover {
+  background-color: #ff6736;
+}
+footer .header {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .header img {
+  width: 130px;
+}
+footer .header p {
+  color: white;
+  font-size: 22px;
+  margin-top: 30px;
+  text-align: center;
+}
+footer .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+footer .link a {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+  font-size: 16px;
+}
+footer .link a:not(:last-child) {
+  margin-right: 30px;
+}
+footer .link a:hover {
+  color: #ff6736;
+  background-color: white;
+}
+footer .copyright {
+  margin-top: 90px;
+}
+footer .copyright p {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  footer .start {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: auto;
+  }
+  footer .start .title {
+    margin-bottom: 30px;
+  }
+  footer .start .desc {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 540px) {
+  footer {
+    padding: 160px 20px 120px 20px;
+  }
+}
+@media (max-width: 400px) {
+  footer {
+    padding: 200px 20px 120px 20px;
+  }
+}/*# sourceMappingURL=Footer.css.map */
