@@ -53,7 +53,7 @@ const Work = () => {
                 <div className="infos">
                   <p>{card.name}</p>
                   <p>{card.desc}</p>
-                  {url && (
+                  {card.url != "" && (
                     <a target="_blank" href={card.url}>
                       Voir le projet
                     </a>

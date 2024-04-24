@@ -1,99 +1,98 @@
 @import "../../_settings.scss";
 .work {
-    @include margin();
-    min-height: 100vh;
-    .container {
-        @include container();
-        display: block;
-        .title {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h1 {
-                color: $primaryColor;
-                font-size: 56px;
-            }
-            p {
-                min-width: 250px;
-                max-width: 500px;
-                text-align: center;
-                a {
-                    color: $primaryColor;
-                    border-bottom: 1px solid $primaryColor;
-                }
-            }
+  @include margin();
+  min-height: 100vh;
+  .container {
+    @include container();
+    display: block;
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        color: $primaryColor;
+        font-size: 56px;
+      }
+      p {
+        min-width: 250px;
+        max-width: 500px;
+        text-align: center;
+        a {
+          color: $primaryColor;
+          border-bottom: 1px solid $primaryColor;
         }
-        .projets {
-            @include margin();
-            .cards {
-                @include margin();
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 40px;
-                .card {
-                    @include margin();
-                    cursor: pointer;
-                    position: relative;
-                    max-width: 400px;
-                    height: 100%;
-                    overflow: hidden;
-                    border-radius: 6px;
-                    &:hover .infos{ 
-                        z-index: 1;
-                        
-                        top: 0;
-                    }
-                    &:hover .infos a {
-                        background-color: $backgroundColor;
-                        color: $secondaryColor;
-                    }
-
-                    .image {
-                        max-width: 400px;
-                        height: 250px;
-                        img {
-                            max-width: 100%;
-                            height: 100%;
-                        }
-                    }
-                    .infos {
-                        position: absolute;
-                        top: 100%;
-                        z-index: -1;
-                        transition: 0.3s;
-                        background-color: $fourthColor;
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-evenly;
-                        flex-direction: column;
-                        text-align: center;
-                        padding: 5px;
-                        p:nth-child(1) {
-                            font-size: 17px;
-                            color: $backgroundColor;
-                            font-weight: 600;
-                        }p:nth-child(2) {
-                            color: $backgroundColor;
-                        }
-                        a {
-                            text-align: center;
-                            font-size: 16px;
-                            color: $secondaryColor;
-                            border: 1px solid $backgroundColor;
-                            padding: 5px;
-                            border-radius: 35px;
-                            width: 150px;
-                            transition: 0.3s;
-                            
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+    .projets {
+      @include margin();
+      .cards {
+        @include margin();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        .card {
+          @include margin();
+          position: relative;
+          max-width: 400px;
+          height: 100%;
+          overflow: hidden;
+          border-radius: 6px;
+          &:hover .infos {
+            z-index: 1;
+
+            top: 0;
+          }
+          &:hover .infos a {
+            background-color: $backgroundColor;
+            color: $secondaryColor;
+          }
+
+          .image {
+            max-width: 400px;
+            height: 250px;
+            img {
+              max-width: 100%;
+              height: 100%;
+            }
+          }
+          .infos {
+            position: absolute;
+            top: 100%;
+            z-index: -1;
+            transition: 0.3s;
+            background-color: $fourthColor;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            text-align: center;
+            padding: 5px;
+            p:nth-child(1) {
+              font-size: 17px;
+              color: $backgroundColor;
+              font-weight: 600;
+            }
+            p:nth-child(2) {
+              color: $backgroundColor;
+            }
+            a {
+              text-align: center;
+              font-size: 16px;
+              color: $secondaryColor;
+              border: 1px solid $backgroundColor;
+              padding: 5px;
+              border-radius: 35px;
+              width: 150px;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
 }
