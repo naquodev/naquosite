@@ -8,14 +8,16 @@ const Work = () => {
       desc: "Création d'un site web pour une équipe eSport. (Malheureusement, plus hébergé.)",
       image: "./project/xrush.webp",
       icon: "bi bi-search",
-      url: "https://xrush.eu",
-    },{
+      url: "",
+    },
+    {
       name: "Epreuve intégrée (Examen Décembre)",
       desc: '"La semaine de l’Europe"',
       image: "./project/epreuve.webp",
       icon: "bi bi-search",
       url: "./project/epreuve.pdf",
-    },{
+    },
+    {
       name: "Dépliant Yves Rocher",
       desc: "Création d'un dépliant pour un institut de beauté (exercice)",
       image: "./project/depliant.webp",
@@ -44,18 +46,20 @@ const Work = () => {
         <div className="projets">
           <div className="cards">
             {cards.map((card, index) => (
-                <div className="card">
-                  <div className="image">
-                    <img src={card.image} alt="Image du site web" />
-                  </div>
-                  <div className="infos">
-                    <p>{card.name}</p>
-                    <p>{card.desc}</p>
+              <div className="card">
+                <div className="image">
+                  <img src={card.image} alt="Image du site web" />
+                </div>
+                <div className="infos">
+                  <p>{card.name}</p>
+                  <p>{card.desc}</p>
+                  {url && (
                     <a target="_blank" href={card.url}>
                       Voir le projet
                     </a>
-                  </div>
+                  )}
                 </div>
+              </div>
             ))}
           </div>
         </div>
