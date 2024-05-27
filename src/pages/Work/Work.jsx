@@ -24,6 +24,20 @@ const Work = () => {
       icon: "bi bi-search",
       url: "./project/depliant.pdf",
     },
+    {
+      name: "Epreuve intégrée (Examen Mai)",
+      desc: '"Le WIFFF - Evènement Fantastique"',
+      image: "./project/wifff.webp",
+      icon: "bi bi-search",
+      url: "./project/wifff.pdf",
+    },
+    {
+      name: "D. Pierre (INFO Wavre)",
+      desc: "Maquette de Site Web lors d'un stage",
+      image: "./project/infowavre.webp",
+      icon: "bi bi-search",
+      url: "./project/infowavre.pdf",
+    },
   ];
 
   return (
