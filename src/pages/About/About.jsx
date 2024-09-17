@@ -94,7 +94,7 @@ const About = () => {
             >
               <span>
                 {inView ? (
-                  <CountUp start={0} end={4} duration={3}></CountUp>
+                  <CountUp start={0} end={5} duration={3}></CountUp>
                 ) : null}
               </span>{" "}
               <h1>
